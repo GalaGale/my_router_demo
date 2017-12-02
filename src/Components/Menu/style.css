@@ -1,0 +1,8 @@
+.navigation-list {
+    /*text-decoration: none;*/
+    list-style-type: none;
+}
+
+.navigation-menu {
+    background: lightgray;
+}
