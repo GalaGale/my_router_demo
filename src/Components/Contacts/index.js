@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
 
+import './style.css'
+
 class Contacts extends Component {
     render() {
         return (
-            <div>
+            <div className="contacts-page">
                 <h1>We live in a beautiful world</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                     Amet doloremque doloribus explicabo necessitatibus nihil
@@ -15,4 +17,4 @@ class Contacts extends Component {
     }
 }
 
-export default Contacts;
+export default Contacts

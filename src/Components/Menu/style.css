@@ -1,8 +1,10 @@
-.navigation-list {
-    /*text-decoration: none;*/
-    list-style-type: none;
-}
-
 .navigation-menu {
-    background: lightgray;
+  background-color: lightgray;
+}
+.navigation-menu .navigation-list {
+  list-style: none;
+}
+.navigation-menu .navigation-list li {
+  display: inline-block;
+  margin: 5px 10px;
 }
