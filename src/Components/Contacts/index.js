@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 
 import './style.css'
+import cat from '../../img/cat.jpg'
+import cat3 from '../../img/cat3.jpg'
 
 class Contacts extends Component {
     render() {
@@ -12,6 +14,8 @@ class Contacts extends Component {
                     quam quisquam tempora ut velit! Atque cupiditate dolorum
                     eligendi harum modi omnis perferendis perspiciatis quos, sint.
                 </p>
+                <img src={cat} />
+                <img src={cat3} />
             </div>
         );
     }
