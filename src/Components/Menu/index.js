@@ -1,4 +1,6 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
+
 import './style.css'
 
 class Menu extends Component {
@@ -9,9 +11,9 @@ class Menu extends Component {
 
                 <div className="navigation-menu">
                     <ul className="navigation-list">
-                        <li><a href="/">Главная</a></li>
-                        <li><a href="/contacts">Контакты</a></li>
-                        <li><a href="/about">О нас</a></li>
+                        <li><Link to="/">Главная</Link></li>
+                        <li><Link to="/contacts">Контакты</Link></li>
+                        <li><Link to="/about">О нас</Link></li>
                     </ul>
                 </div>
 
@@ -20,4 +22,4 @@ class Menu extends Component {
     }
 }
 
-export default Menu;
+export default Menu
