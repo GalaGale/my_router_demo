@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Switch, Route } from 'react-router-dom'
 
-import './style.css';
+import './style.less';
 
 import Menu from '../Menu'
 

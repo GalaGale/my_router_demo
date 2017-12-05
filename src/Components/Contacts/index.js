@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import './style.css'
+import './style.less'
 import cat from '../../img/cat.jpg'
 import cat3 from '../../img/cat3.jpg'
 

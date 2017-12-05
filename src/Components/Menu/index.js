@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 
-import './style.css'
+import './style.less'
 
 class Menu extends Component {
     render() {

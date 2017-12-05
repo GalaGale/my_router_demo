@@ -1,7 +1,7 @@
 // import { Component } from 'react';
 import React from 'react'
 
-import './style.css'
+import './style.less'
 
 class About extends React.Component {
     render() {
