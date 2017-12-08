@@ -1,17 +1,17 @@
-// import { Component } from 'react';
-import React from 'react'
+import React, { Component } from 'react';
+
+import Lorem from '../Lorem'
 
 import './style.less'
 
-class About extends React.Component {
+class About extends Component {
     render() {
         return (
             <div className="about-page">
                 <h1>About us: lalala</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias expedita
-                    inventore labore nisi odio, optio quasi rerum sapiente sed? At cupiditate
-                    deleniti dolores eaque eveniet illo ipsa molestiae nihil recusandae?
-                </p>
+                <Lorem id="p1" length="2"/>
+                <Lorem id="p2" length="3"/>
+                <Lorem id="p3" length="4"/>
             </div>
         );
     }
