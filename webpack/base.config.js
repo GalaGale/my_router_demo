@@ -1,22 +1,22 @@
-const webpack = require('webpack');
-const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const CopyWebpackPlugin = require('copy-webpack-plugin');
+const webpack = require('webpack')
+const path = require('path')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+const CopyWebpackPlugin = require('copy-webpack-plugin')
+const rootPath = path.join(__dirname, '..')
 
-const VENDOR_LIBS = [
-    'react', 'react-dom', 'react-router-dom'
-];
+const VENDOR_LIBS = ['react', 'react-dom', 'react-router-dom']
 
 module.exports = {
-    // context: __dirname,
+    devtool: 'cheap-eval-source-map',
+    context: rootPath,
     entry: {
-        bundle:'./src/index.js',
+        bundle: './src/index.js',
         vendor: VENDOR_LIBS
     },
     output: {
-        path: path.join(path.join(__dirname, '..'), 'build'),
-        filename: '[name].[chunkhash:8].js'
-        // publicPath: 'build/'
+        path: path.join(rootPath, 'build'),
+        filename: '[name].[hash:8].js',
+        // publicPath: '/build/'
     },
     module: {
         rules: [
@@ -58,8 +58,6 @@ module.exports = {
         new HtmlWebpackPlugin({
             template: 'public/index.html'
         }),
-        new CopyWebpackPlugin([
-            { from:'public/ggg.ggg', to:'ggg.ggg' }
-        ])
+        new CopyWebpackPlugin([{ from: 'public/ggg.ggg', to: 'ggg.ggg' }])
     ]
-};
+}

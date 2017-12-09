@@ -12,16 +12,25 @@ class Menu extends Component {
 
                 <div className="navigation-menu">
                     <ul className="navigation-list">
-                        <li><Link to="/">Главная</Link></li>
-                        <li><Link to="/contacts">Контакты</Link></li>
-                        <li><Link to="/about">О нас</Link></li>
-                        <li><HashLink to="/about#p2">Второй абзац</HashLink></li>
-                        <li><HashLink to="/about#p3">Третий абзац</HashLink></li>
+                        <li>
+                            <Link to="/">Главная</Link>
+                        </li>
+                        <li>
+                            <Link to="/contacts">Контакты</Link>
+                        </li>
+                        <li>
+                            <Link to="/about">О нас</Link>
+                        </li>
+                        <li>
+                            <HashLink to="/about#p2">Второй абзац</HashLink>
+                        </li>
+                        <li>
+                            <HashLink to="/about#p3">Третий абзац</HashLink>
+                        </li>
                     </ul>
                 </div>
-
             </div>
-        );
+        )
     }
 }
 
