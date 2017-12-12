@@ -8,6 +8,7 @@ import Menu from '../Menu'
 import Main from '../Main'
 import Contacts from '../Contacts'
 import About from '../About'
+import Flowers from '../Flowers'
 
 
 class App extends Component {
@@ -24,6 +25,7 @@ class App extends Component {
                   <Route exact path='/' component={Main}/>
                   <Route path='/contacts' component={Contacts}/>
                   <Route path='/about' component={About}/>
+                  <Route path='/flowers' component={Flowers}/>
               </Switch>
           </div>
 

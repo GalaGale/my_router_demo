@@ -27,6 +27,9 @@ class Menu extends Component {
                         <li>
                             <HashLink to="/about#p3">Третий абзац</HashLink>
                         </li>
+                        <li>
+                            <Link to="/flowers">Цветы</Link>
+                        </li>
                     </ul>
                 </div>
             </div>
