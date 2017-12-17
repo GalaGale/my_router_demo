@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ShareFacebook from '../Sharefacebook';
 
 import './style.less'
 
@@ -11,6 +12,7 @@ class Main extends Component {
                     inventore labore nisi odio, optio quasi rerum sapiente sed? At cupiditate
                     deleniti dolores eaque eveniet illo ipsa molestiae nihil recusandae?
                 </p>
+                <ShareFacebook />
             </div>
         );
     }
